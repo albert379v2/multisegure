@@ -32,7 +32,6 @@
             android:name=".ui.browser.BrowserActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize"
             android:exported="false"
-            android:process=":browser"
             android:theme="@style/Theme.MultiSegure" />
 
         <activity
