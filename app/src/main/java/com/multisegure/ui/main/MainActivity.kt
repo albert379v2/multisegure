@@ -153,7 +153,7 @@ fun ProfilesScreen() {
         AlertDialog(
             onDismissRequest = { showDeleteDialog = null },
             title = { Text("Eliminar Perfil") },
-            text = { Text("¿Eliminar "${profile.name}"? Se perderán todos los datos de sesión.") },
+            text = { Text("¿Eliminar ${profile.name}? Se perderán todos los datos de sesión.") },
             confirmButton = {
                 TextButton(
                     onClick = {
