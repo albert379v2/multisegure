@@ -33,7 +33,7 @@ class ProxyManager(private val profile: BrowserProfile) {
             if (profile.proxyUsername.isNotBlank() && profile.proxyPassword.isNotBlank()) {
                 builder.proxyAuthenticator { _, response ->
                     val credential = Credentials.basic(profile.proxyUsername, profile.proxyPassword)
-                    response.request().newBuilder()
+                    response.request.newBuilder()
                         .header("Proxy-Authorization", credential)
                         .build()
                 }
