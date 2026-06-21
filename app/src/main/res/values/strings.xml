@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MultiSegure</string>
+    <string name="profiles">Perfiles</string>
+    <string name="new_profile">Nuevo Perfil</string>
+    <string name="edit_profile">Editar Perfil</string>
+    <string name="delete_profile">Eliminar Perfil</string>
+    <string name="profile_name">Nombre del Perfil</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="proxy_settings">Configuración Proxy</string>
+    <string name="proxy_host">Host</string>
+    <string name="proxy_port">Puerto</string>
+    <string name="proxy_username">Usuario</string>
+    <string name="proxy_password">Contraseña</string>
+    <string name="proxy_type">Tipo</string>
+    <string name="user_agent">User-Agent</string>
+    <string name="incognito_mode">Modo Incógnito</string>
+    <string name="javascript">JavaScript</string>
+    <string name="block_trackers">Bloquear Trackers</string>
+    <string name="search_or_url">Buscar o escribir URL</string>
+    <string name="tabs">Pestañas</string>
+    <string name="back">Atrás</string>
+    <string name="forward">Adelante</string>
+    <string name="reload">Recargar</string>
+    <string name="home">Inicio</string>
+    <string name="menu">Menú</string>
+    <string name="add_tab">Nueva Pestaña</string>
+    <string name="close_tab">Cerrar Pestaña</string>
+</resources>
