@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.multisegure.data.model.BrowserProfile
 
-@Database(entities = [BrowserProfile::class], version = 1, exportSchema = false)
+@Database(entities = [BrowserProfile::class], version = 2, exportSchema = false)  // ← version 2
 abstract class AppDatabase : RoomDatabase() {
     abstract fun profileDao(): ProfileDao
 
@@ -20,7 +20,9 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "multisegure_database"
-                ).build()
+                )
+                .fallbackToDestructiveMigration()  // ← AGREGADO: borra y recrea si cambia schema
+                .build()
                 INSTANCE = instance
                 instance
             }
