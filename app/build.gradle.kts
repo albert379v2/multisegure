@@ -74,6 +74,9 @@ dependencies {
 
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
+    // ✅ NUEVA DEPENDENCIA (para ProxyController del WebView)
+    implementation("androidx.webkit:webkit:1.11.0")
+
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     testImplementation("junit:junit:4.13.2")
