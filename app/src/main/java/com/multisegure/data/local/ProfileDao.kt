@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ProfileDao {
-    @Query("SELECT * FROM profiles ORDER BY createdAt DESC")
+    @Query("SELECT * FROM profiles ORDER BY id DESC")  // ← cambiado: id en vez de createdAt
     fun getAllProfiles(): Flow<List<BrowserProfile>>
 
     @Query("SELECT * FROM profiles WHERE id = :id")
