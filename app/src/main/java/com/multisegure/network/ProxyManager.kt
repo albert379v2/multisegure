@@ -69,7 +69,7 @@ class ProxyManager(private val profile: BrowserProfile) {
                 mimeType,
                 encoding,
                 response.code,
-                response.message,
+                response.message.ifBlank { "OK" },
                 response.headers.toMultimap().mapValues { it.value.joinToString(", ") },
                 response.body?.byteStream()
             )
