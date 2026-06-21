@@ -25,6 +25,7 @@ import com.multisegure.network.ProxyManager
 import com.multisegure.viewmodel.BrowserViewModel
 
 @SuppressLint("SetJavaScriptEnabled")
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BrowserScreen(
     profileName: String,
