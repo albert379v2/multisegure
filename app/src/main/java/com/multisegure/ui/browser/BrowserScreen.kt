@@ -253,7 +253,7 @@ private fun createWebView(
             domStorageEnabled = true
             databaseEnabled = true
             cacheMode = if (incognito) WebSettings.LOAD_NO_CACHE else WebSettings.LOAD_DEFAULT
-            userAgentString = userAgent.ifBlank { defaultUserAgentString }
+            userAgentString = userAgent.ifBlank { WebSettings.getDefaultUserAgent(context) }
             mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
             useWideViewPort = true
             loadWithOverviewMode = true
